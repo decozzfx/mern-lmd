@@ -71,14 +71,23 @@ To test the compiled API code, run:
 npm run start or yan start
 ```
 
-## Run using Docker compose
+## Run using Dockerfile
+
+goto inside backend directory, run:
 
 ```bash
 # this runs the compose to build first
-docker compose build
+docker build --tag 'backend:0.01' .
+docker run -dp 4004:4004 backend:0.01
 ```
+
+then move to frontend directory, and run :
 
 ```bash
 # this for running builded image from compose
-docker compose up
+docker build -t react-nginx-app .
+docker run --name react-nginx-app -p 3000:80 -d react-nginx-app
 ```
+
+Then run the project
+open your browser in localhost:3000
