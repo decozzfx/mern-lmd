@@ -1,4 +1,4 @@
-## Run Locally
+## Run Dev Locally
 
 Clone the project
 
@@ -7,10 +7,6 @@ git clone https://github.com/decozzfx
 ```
 
 Go to the project directory
-
-```bash
-cd decozzzzzzz
-```
 
 Navigate to the backend directory
 
